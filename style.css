@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "head head head"   
+                         "nav main aside"
+                         "footer footer footer";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 100px 1fr;
+    height: 100vh;
+    gap: 10px;
+}
+header {
+    grid-area: head;
+    background-color: aqua;
+}
+nav {
+    grid-area: nav;
+    background-color: blueviolet;
+}
+main {
+    grid-area: main;
+    background-color: burlywood;
+}
+aside {
+    width: 100px;
+    grid-area: aside;
+    background-color: brown;
+}
+footer {
+    height: 100px;
+    grid-area: footer;
+    background-color: cadetblue;
+}
